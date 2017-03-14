@@ -477,7 +477,7 @@ class OrgNode(OrgPlugin):
         self.keepindent = False # If the line starts by an indent, it is not a node
     def _treat(self,current,line):
         # Build regexp
-        regexp_string = "^(\*+)\s*"
+        regexp_string = "^(\*+)\s+"
         if self.todo_list:
             separator = ""
             re_todos = "("
